@@ -5,7 +5,7 @@
 #the group is named as FILENAME_Group, so name your file accordingly.  Then the output file named -
 #add_addresses_FILENAME can be used as a script to add the objects to the Fortigate directly.  The input file
 #will accept cidr notation and convert into appropriate net mask (using cidr_to_netmask - stolen from stackoverflow)
-#lack of cidr notation will be treated as a /32
+#lack of cidr notation will be treated as a /32.
 
 import sys
 import socket
