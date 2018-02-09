@@ -11,6 +11,11 @@ import sys
 import socket
 import struct
 
+if len(sys.argv) < 2:
+    print "\nThis script is used to to convert a file with a list of IP's into a Fortigate Config script."
+    print "\nUsage: ./create_address_file.py IPFILE\n"
+    quit()
+
 def cidr_to_netmask(cidr):
     network, net_bits = cidr.split('/')
     host_bits = 32 - int(net_bits)
