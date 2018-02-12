@@ -9,14 +9,11 @@
 
 import sys
 
-<<<<<<< HEAD
 if len(sys.argv) < 2:
     print "\nThis script is used to to convert a file with a list of IP's into a Fortigate Config script."
     print "\nUsage: ./create_address_file.py IPFILE\n"
     quit()
 
-
-=======
 def cidr_to_mask(value):
     
     def convert(binary):
@@ -60,8 +57,6 @@ def cidr_to_mask(value):
     
     smask=str(oct1) + '.' + str(oct2) + '.' + str(oct3) + '.' + str(oct4)
     return net, smask
-
->>>>>>> 6b2ca4eb7009ad5c8eaafa17a675670b789bd387
 
 object=[]
 with open(sys.argv[1]) as infile:
